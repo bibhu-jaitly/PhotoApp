@@ -1,0 +1,4 @@
+This project uses Flickr API for fetching Photos from their public images.
+Used MVVM Architecture.
+Used Coroutines for making API calls and heavy background tasks
+Used LiveData and Flow with Room to fetch the saved data and display accordingly.
