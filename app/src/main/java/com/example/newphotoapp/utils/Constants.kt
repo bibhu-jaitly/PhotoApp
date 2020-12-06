@@ -1,4 +1,4 @@
-package com.example.newphotoapp
+package com.example.newphotoapp.utils
 
 class Constants {
 

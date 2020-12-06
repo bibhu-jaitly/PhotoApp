@@ -1,4 +1,4 @@
-package com.example.newphotoapp
+package com.example.newphotoapp.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,9 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.newphotoapp.PhotoAdapter.ViewHolder
+import com.example.newphotoapp.R.drawable
+import com.example.newphotoapp.R.layout
+import com.example.newphotoapp.ui.PhotoAdapter.ViewHolder
 import com.example.newphotoapp.data.model.PicDetail
 
 class PhotoAdapter : RecyclerView.Adapter<ViewHolder>() {
@@ -22,7 +24,7 @@ class PhotoAdapter : RecyclerView.Adapter<ViewHolder>() {
     val layoutInflater = LayoutInflater.from(parent.context)
     context = parent.context
     val view = layoutInflater
-      .inflate(R.layout.photo_item, parent, false) as ImageView
+      .inflate(layout.photo_item, parent, false) as ImageView
     return ViewHolder(view)
   }
 
@@ -37,8 +39,8 @@ class PhotoAdapter : RecyclerView.Adapter<ViewHolder>() {
         .centerCrop()
         .apply(
           RequestOptions()
-            .placeholder(R.drawable.loading_animation)
-            .error(R.drawable.ic_broken_image)
+            .placeholder(drawable.loading_animation)
+            .error(drawable.ic_broken_image)
         )
         .into(holder.itemView as ImageView)
     }

@@ -1,4 +1,4 @@
-package com.example.newphotoapp
+package com.example.newphotoapp.ui
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -7,12 +7,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.newphotoapp.Constants.Companion.APIKEY
-import com.example.newphotoapp.Constants.Companion.FORMAT
-import com.example.newphotoapp.Constants.Companion.METHOD_PHOTO_DETAIL
-import com.example.newphotoapp.Constants.Companion.METHOD_PHOTO_LIST
-import com.example.newphotoapp.Constants.Companion.NO_JSON_CALLBACK
-import com.example.newphotoapp.Constants.Companion.USER_ID
+import com.example.newphotoapp.utils.Constants.Companion.APIKEY
+import com.example.newphotoapp.utils.Constants.Companion.FORMAT
+import com.example.newphotoapp.utils.Constants.Companion.METHOD_PHOTO_DETAIL
+import com.example.newphotoapp.utils.Constants.Companion.METHOD_PHOTO_LIST
+import com.example.newphotoapp.utils.Constants.Companion.NO_JSON_CALLBACK
+import com.example.newphotoapp.utils.Constants.Companion.USER_ID
 import com.example.newphotoapp.data.database.PhotoDBRepository
 import com.example.newphotoapp.data.network.PhotoAPI
 import com.example.newphotoapp.data.model.PicDetail
